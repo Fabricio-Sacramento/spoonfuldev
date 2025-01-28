@@ -2,10 +2,15 @@ import Spheres1Background from 'https://cdn.jsdelivr.net/npm/threejs-components@
 
 // Inicializar o fundo de esferas
 const bg = Spheres1Background(document.getElementById('webgl-canvas'), {
-  count: 300,    // Número de esferas
-  minSize: 0.2,  // Tamanho mínimo das esferas
-  maxSize: 0.8,    // Tamanho máximo das esferas
-  gravity: 0.2   // Gravidade inicial
+  count: 250,    // Número de esferas
+  minSize: 0.4,  // Tamanho mínimo das esferas
+  maxSize: 1.2,    // Tamanho máximo das esferas
+  gravity: 0.5,   // Gravidade inicial
+  colors: [
+    0xF4A70B, // Laranja
+    0xB77D08, // Verde claro
+    0x553A04  // Azul
+  ]
 });
 
 // Alternar gravidade
